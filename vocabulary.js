@@ -4,7 +4,7 @@
 // 📝 How to edit content:
 // 1. Add a new profession to the vocabulary array
 // 2. Use an emoji for visual representation
-// 3. Add an example sentence in Spanish
+// 3. Add example sentences in Spanish and English
 
 const vocabulary = [
     {
@@ -13,6 +13,7 @@ const vocabulary = [
         english: "Doctor",
         emoji: "👨‍⚕️",
         example: "El médico cura a los pacientes.",
+        exampleEn: "The doctor cures the patients.",
         workplace: "Hospital",
         workplaceEs: "Hospital"
     },
@@ -22,6 +23,7 @@ const vocabulary = [
         english: "Firefighter",
         emoji: "🧑‍🚒",
         example: "El bombero apaga el incendio.",
+        exampleEn: "The firefighter puts out the fire.",
         workplace: "Fire Station",
         workplaceEs: "Cuartel de bomberos"
     },
@@ -31,6 +33,7 @@ const vocabulary = [
         english: "Teacher",
         emoji: "👨‍🏫",
         example: "El profesor enseña español.",
+        exampleEn: "The teacher teaches Spanish.",
         workplace: "School",
         workplaceEs: "Escuela"
     },
@@ -40,6 +43,7 @@ const vocabulary = [
         english: "Nurse",
         emoji: "👩‍⚕️",
         example: "La enfermera ayuda a los enfermos.",
+        exampleEn: "The nurse helps the sick people.",
         workplace: "Hospital",
         workplaceEs: "Hospital"
     },
@@ -49,6 +53,7 @@ const vocabulary = [
         english: "Police Officer",
         emoji: "👮",
         example: "El policía cuida la ciudad.",
+        exampleEn: "The police officer protects the city.",
         workplace: "Police Station",
         workplaceEs: "Comisaría"
     },
@@ -58,6 +63,7 @@ const vocabulary = [
         english: "Chef",
         emoji: "👨‍🍳",
         example: "El cocinero prepara la comida.",
+        exampleEn: "The chef prepares the food.",
         workplace: "Restaurant",
         workplaceEs: "Restaurante"
     },
@@ -67,6 +73,7 @@ const vocabulary = [
         english: "Pilot",
         emoji: "👨‍✈️",
         example: "El piloto vuela el avión.",
+        exampleEn: "The pilot flies the plane.",
         workplace: "Airport",
         workplaceEs: "Aeropuerto"
     },
@@ -76,6 +83,7 @@ const vocabulary = [
         english: "Lawyer",
         emoji: "⚖️",
         example: "El abogado defiende al cliente.",
+        exampleEn: "The lawyer defends the client.",
         workplace: "Court",
         workplaceEs: "Tribunal"
     },
@@ -85,6 +93,7 @@ const vocabulary = [
         english: "Engineer",
         emoji: "👨‍💻",
         example: "El ingeniero diseña puentes.",
+        exampleEn: "The engineer designs bridges.",
         workplace: "Office",
         workplaceEs: "Oficina"
     },
@@ -94,6 +103,7 @@ const vocabulary = [
         english: "Artist",
         emoji: "🎨",
         example: "La artista pinta cuadros.",
+        exampleEn: "The artist paints pictures.",
         workplace: "Studio",
         workplaceEs: "Estudio"
     },
@@ -103,6 +113,7 @@ const vocabulary = [
         english: "Musician",
         emoji: "🎵",
         example: "El músico toca la guitarra.",
+        exampleEn: "The musician plays the guitar.",
         workplace: "Concert Hall",
         workplaceEs: "Sala de conciertos"
     },
@@ -112,6 +123,7 @@ const vocabulary = [
         english: "Veterinarian",
         emoji: "🐾",
         example: "El veterinario cuida a los animales.",
+        exampleEn: "The veterinarian takes care of the animals.",
         workplace: "Vet Clinic",
         workplaceEs: "Clínica veterinaria"
     }

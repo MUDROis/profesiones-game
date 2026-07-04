@@ -86,6 +86,7 @@ function updateFlashcard() {
     document.getElementById('card-emoji-back').textContent = currentWord.emoji;
     document.getElementById('card-translation').textContent = currentWord.english;
     document.getElementById('card-example').textContent = `"${currentWord.example}"`;
+    document.getElementById('card-example-en').textContent = `"${currentWord.exampleEn}"`;
     
     document.getElementById('card-counter').textContent = 
         `${gameState.currentCardIndex + 1} / ${vocabulary.length}`;
