@@ -1034,29 +1034,29 @@ body::before {
 /* Footer */
 .footer {
     text-align: center;
-    padding: 24px 20px;
+    padding: 20px;
     margin-top: 40px;
     background: rgba(255,255,255,0.1);
     border-top: 1px solid rgba(255,255,255,0.2);
     color: rgba(255,255,255,0.8);
-    font-size: 12px;
-    line-height: 1.8;
+    font-size: 13px;
+    line-height: 1.5;
 }
 
-.footer p {
-    margin: 4px 0;
-}
-
-.footer-brand {
-    font-weight: 700;
-    letter-spacing: 0.5px;
+.footer-text {
+    margin: 0;
 }
 
 .tm {
-    font-size: 14px;
-    font-weight: 800;
+    font-weight: 700;
     background: linear-gradient(135deg, var(--accent), var(--pink));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+@media (max-width: 600px) {
+    .footer-text {
+        font-size: 11px;
+    }
 }
