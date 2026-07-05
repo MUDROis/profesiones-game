@@ -30,8 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
     loadProgress();
     updateUI();
     
-    // Start button
+    // Start button - reset card index to start from beginning
     document.getElementById('start-btn').addEventListener('click', () => {
+        gameState.currentCardIndex = 0;
         showScreen('vocabulary-screen');
         updateFlashcard();
     });
@@ -45,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Show vocabulary screen if there's saved progress
     if (gameState.knownWords.length > 0) {
+        gameState.currentCardIndex = 0;
         showScreen('vocabulary-screen');
         updateFlashcard();
     }
@@ -56,6 +58,13 @@ function showScreen(screenId) {
         screen.classList.remove('active');
     });
     document.getElementById(screenId).classList.add('active');
+    
+    // Reset card index when going to vocabulary screen
+    if (screenId === 'vocabulary-screen') {
+        gameState.currentCardIndex = 0;
+        updateFlashcard();
+    }
+    
     updateUI();
     window.scrollTo(0, 0);
 }
@@ -443,6 +452,7 @@ function restartGame() {
     };
     
     localStorage.removeItem('profesionesProgress');
+    currentWord = vocabulary[0];
     showScreen('welcome-screen');
     updateUI();
 }
